@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notlara Bak ve Hatırla!</title>
+    <link rel="icon" href="https://aux2.iconspalace.com/uploads/notepad-icon-256.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4 text-center">Notlara Bak ve Hatırla!</h1>
+
+        <form class="d-flex" id="frmTodo">
+            <input id="inputTask" type="text" class="form-control" placeholder="sonra hatırlamak için ekle..." required>
+            <button class="btn btn-primary ml-2 bg-success"><i class="fas fa-plus"></i></button>
+        </form>
+        <br>   
+   
+
+        <div class="card rounded-2 mt-4">       
+            <input type="text" id="find" placeholder="Ara ara...">
+        <br>
+            <input type="date" id="datechanger">
+        </div>
+        <div class="text-right">
+            <br>
+            <input type="checkbox" id="yildizb">Yıldız bıraktığın mesajlar<br></input>
+        </div>  
+        <div class="bg-warning">        
+            <ul id="todos" class="list-unstyled mt-3 todo-list"></ul>
+        </div>
+
+    </div>
+
+    <script src="libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js"></script>
+</body>
+</html>
